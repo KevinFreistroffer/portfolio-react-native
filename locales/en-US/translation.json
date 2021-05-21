@@ -1,0 +1,108 @@
+{
+  "About me": "About me",
+  "Skills": "Skills",
+  "Work history": "Work history",
+  "Contractor": "Contractor",
+  "Client": "Client",
+  "Location": "Location",
+  "Employment period": "Employment period",
+  "Position": "Position",
+  "Summary": "Summary",
+  "welcome": "Welcome",
+  "Create an Account": "Create an Account",
+  "Create Account": "Create Account",
+  "Log in": "Log in",
+  "Forgot password": "Forgot password",
+  "Front End Developer": "Front end developer",
+  "Angular & Angular-Dart Developer": "Angular & Angular-Dart Developer",
+  "Angular Engineer": "Angular Engineer",
+  "Visit website": "Visit website",
+  "Technologies": "Technologies",
+  "About": "About",
+  "Screenshots": "Screenshots",
+  "Select language": "Select language",
+  "about_me_text": "Hi, my name is Kevin Freistroffer. I'm 36 years and have been developing for 10+ years. I specialize in HTML5, CSS3, JavaScript with React and Angular on the front end, NodeJS and MongoDB on the server side, Dart and mobile development with Flutter. I enjoy, prefer and need to work with a team of other developers to progress and am looking forward to joining a team, in an Agile methodology, utilizing tools such as Jira, to develop stories and features, and to fix bugs, while learning new technologies, strategies, thought processes to develop and incorporate into my daily routines, and to be led by the team and to lead when needed",
+  "work_history": {
+    "summary": {
+      "thermofisher": {
+        "1": "Front end developer tasked with converting Angular pages to React given the designs and UX",
+        "2": "Scrum methodology including sprint planning, backlog grooming, and end of sprint retrospective meetings",
+        "3": "Daily stand up meetings lead by a scrum master, a product owner, team lead, with other front-end developers, backend developers and other team members from within the company",
+        "4": "End of sprint demos to team members from the business",
+        "5": "Integral part of the development and release lifecycle including estimating requirements, implementing requirements, deploying to QA, and verifying the code we pushed to QA and production following a release",
+        "6": "Strong team-oriented development process including code reviews, chat, phone and video calls, after hour meetings to discuss current and future requirements, and after hours collaboration to fix bugs following a release",
+        "7": "Technologies including: Jira, Confluence, Abstract, HTML5, CSS & SCSS, JavaScript with React, styled-components, NodeJS, development tools including Jenkins and GitHub",
+        "8": "Requirements developed and pushed to production at thermofisher.com"
+      },
+      "accenture_google": {
+        "1": "Convert an existing Angular TypeScript application to Angular-Dart, with a SAP backend proxying through a Python server",
+        "2": "Communicate and cooperate with technology lead and manager to complete weekly assignments, including in person meetings and video meetings",
+        "3": "Learn new technologies including Dart, Angular-Dart, and Googles internal technologies and internal development procedures",
+        "4": "Develop in a Google building and remotely"
+      },      
+      "apple": {
+        "1": "Develop an UI based on a design and the requirements specified with Angular 6, using TypeScript and Angular Material Components",
+        "2": "Connect the front end to a backend server given the API contract details, and render the data on the UI",
+        "3": "Use tools to develop including the Angular-CLI, Apple's Radar",
+        "4": "Communicate with team members including managers, team lead, mobile iOS & Android developers, backend developers, QA, & management on a daily and weekly basis in person and through chat & video with Slack & WebEx",
+        "5": "Develop in a Apple office"
+      }
+    }
+  },
+  "page_title": {
+    "Home": "Home",
+    "Portfolio": "Portfolio",
+    "Contact me": "Contact me",
+    "Register": "Register",
+    "Sign In": "Sign In"
+  },
+  "page_content": {
+    "home": {
+      "paragraph1": "Hi, my name is Kevin Freistroffer. I'm 36 years and have been developing for 10+ years. I specialize in HTML5, CSS3, JavaScript with React and Angular on the front end, NodeJS and MongoDB on the server side, Dart and mobile development with Flutter. I enjoy, prefer and need to work with a team of other developers to progress and am looking forward to joining a team, in an Agile methodology, utilizing tools such as Jira, to develop stories and features, and to fix bugs, while learning new technologies, strategies, thought processes to develop and incorporate into my daily routines, and to be led by the team and to lead when needed."
+    },
+    "portfolio": {
+      "project1": {
+        "description": "Contributed features, tasks and bug fixes on 3 pages, including responsive design from 320px up to 1440px viewports using custom CSS CDN’s, reusable components we developed, and existing reusable components from existing repositories.",
+        "technologies": "HTML5, CSS3 & SCSS, JavaScript, Reagieren, gestaltete Komponenten, NodeJS, SCRUM, JIRA",
+        "screenshot1": {
+          "alt": "Order History - 1440px"
+        },
+        "screenshot2": {
+          "alt": "Order Details - 1440px"
+        },
+        "screenshot3": {
+          "alt": "Order Details - 768px"
+        },
+        "screenshot4": {
+          "alt": "Order Details - 576px"
+        },
+        "screenshot5": {
+          "alt": "Order Details - 320px"
+        }
+      },
+      "project2": {
+        "description": "Based on the grid coordinates, the background color is dynamically set. Created while waiting in an aiport!",
+        "technologies": "HTML5, CSS3 & SCSS, JavaScript, Reagieren, gestaltete Komponenten, NodeJS, SCRUM, JIRA",
+        "screenshot1": {
+          "alt": "React Dynamic Gradient Background Color"
+        }
+      }
+    },
+    "contact_me": {
+      "Email": "Email",
+      "LinkedIn": "LinkedIn"
+    }
+  },
+  "form_placeholders": {
+    "Enter a username": "Enter a username",
+    "email@example.com": "email@example.com",
+    "Enter a password": "Enter a password",
+    "Confirm your password": "Confirm your password"
+  },
+  "English": "English",
+  "German": "German",
+  "French": "French",
+  "Spanish": "Spanish",
+  "Chinese (Simplified)": "Chinese (Simplified)",
+  "Chinese (Traditional)": "Chinese (Traditional)"
+}

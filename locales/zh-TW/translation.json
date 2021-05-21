@@ -1,0 +1,108 @@
+{
+  "About me": "關於我",
+  "Skills": "技能專長",
+  "Work history": "工作經歷",
+  "Contractor": "承包商",
+  "Client": "客戶",
+  "Location": "地點",
+  "Employment period": "就業期",
+  "Position": "位置",
+  "Summary": "概括",
+  "welcome": "歡迎",
+  "Create an Account": "創建一個帳戶",
+  "Create Account": "創建帳號",
+  "Log in": "登錄",
+  "Forgot password": "忘記密碼",
+  "Front End Developer": "前端開發人員",
+  "Angular & Angular-Dart Developer": "Angular和Angular-Dart開發人員",
+  "Angular Engineer": "角度工程師",
+  "Visit website": "訪問網站",
+  "Technologies": "技術領域",
+  "About": "關於",
+  "Screenshots": "屏幕截圖",
+  "Select language": "選擇語言",
+  "about_me_text": "嗨，我叫凱文·弗里斯特羅弗（Kevin Freistroffer）。我今年36歲，已經發展了10多年。我專門研究HTML5，CSS3，前端使用React和Angular的JavaScript，服務器端的NodeJS和MongoDB，Dart和Flutter的移動開發。我喜歡，更喜歡並需要與其他開發人員團隊一起進步，並期待以敏捷的方法加入團隊，利用Jira等工具開發故事和功能，並修復錯誤，同時學習新知識。技術，策略和思維過程，以發展並融入我的日常工作中，並由團隊領導並在需要時領導",
+  "work_history": {
+    "summary": {
+      "thermofisher": {
+        "1": "前端開發人員的任務是在給定設計和UX的情況下將Angular頁面轉換為React",
+        "2": "Scrum方法論，包括衝刺計劃，待辦事項整理和衝刺回顧會議結束",
+        "3": "由Scrum負責人，產品所有者，團隊負責人與公司內部的其他前端開發人員，後端開發人員和其他團隊成員主持的每日站立會議",
+        "4": "結束對企業團隊成員的sprint演示",
+        "5": "開發和發布生命週期中不可或缺的部分，包括估計需求，實施需求，部署到QA以及驗證發布後我們推送到QA和生產中的代碼",
+        "6": "強大的面向團隊的開發流程，包括代碼審查，聊天，電話和視頻通話，下班後的會議以討論當前和將來的需求，以及下班後的協作以修復發行後的錯誤",
+        "7": "技術包括：Jira，Confluence，Abstract，HTML5，CSS和SCSS，帶有React的JavaScript，樣式化組件，NodeJS，開發工具（包括Jenkins和GitHub）",
+        "8": "需求已開發並通過thermofisher.com推向生產"
+      },
+      "accenture_google": {
+        "1": "使用通過Python服務器的SAP後端代理將現有的Angular TypeScript應用程序轉換為Angular-Dart",
+        "2": "與技術負責人和經理進行溝通和合作，以完成每週的任務，包括面對面會議和視頻會議",
+        "3": "學習新技術，包括Dart，Angular-Dart和Google的內部技術和內部開發程序",
+        "4": "在Google大樓中進行遠程開發"
+      },
+      "apple": {
+        "1": "使用TypeScript和Angular Material Components根據Angular 6的設計和要求開發UI",
+        "2": "在給定API合約詳細信息的情況下，將前端連接到後端服務器，然後在UI上呈現數據",
+        "3": "使用工具進行開發，包括Angular-CLI，Apple的Radar",
+        "4": "通過Slack和WebEx的聊天和視頻，每天和每週與團隊成員進行溝通，包括經理，團隊負責人，移動iOS和Android開發人員，後端開發人員，質量檢查和管理人員",
+        "5": "在蘋果辦公室開發"
+      }
+    }
+  },
+  "page_title": {
+    "Home": "家",
+    "Portfolio": "文件夾",
+    "Contact me": "聯絡我",
+    "Register": "登記",
+    "Sign In": "登入"
+  },  
+  "page_content": {
+    "home": {
+      "paragraph1": "他幾乎沒注意到這是刮擦。當然，有一點點鮮血，但與他在冒險中獲得的其他大部分傷痕相比，那是鮮血。他沒有辦法知道產生切痕的岩石上面有外來的遺傳物質，這些物質現在正在他的血液中流動。他感覺完全正常，繼續冒險，不知道他會發生什麼。"
+    },
+    "portfolio": {
+      "project1": {
+        "description": "在3頁上提供的功能，任務和錯誤修復，包括使用自定義CSS CDN進行從320px到1440px視口的自適應設計，我們開發的可重用組件以及現有存儲庫中的可重用組件。",
+        "technologies": "HTML5，CSS3和SCSS，JavaScript，Reagieren，gestaltete Komponenten，NodeJS，SCRUM，JIRA",
+        "screenshot1": {
+          "alt": "訂單記錄-1440px"
+        },
+        "screenshot2": {
+          "alt": "訂單明細-1440px"
+        },
+        "screenshot3": {
+          "alt": "訂單明細-768px"
+        },
+        "screenshot4": {
+          "alt": "訂單明細-576px"
+        },
+        "screenshot5": {
+          "alt": "訂單明細-320px"
+        }
+      },
+      "project2": {
+        "description": "基於網格坐標，可以動態設置背景色。在等候機場時創建的！",
+        "technologies": "HTML5, CSS3 & SCSS, JavaScript, Reagieren, gestaltete Komponenten, NodeJS, SCRUM, JIRA",
+        "screenshot1": {
+          "alt": "反應動態漸變背景色"
+        }
+      }
+    },
+    "contact_me": {
+      "Email": "電子郵件",
+      "LinkedIn": "領英"
+    }
+  },
+  "form_placeholders": {
+    "Enter a username": "輸入用戶名",
+    "email@example.com": "Email@example.Com",
+    "Enter a password": "輸入密碼",
+    "Confirm your password": "確認你的密碼"
+  },
+  "English": "英語",
+  "German": "德語",
+  "French": "法語",
+  "Spanish": "西班牙語",
+  "Chinese (Simplified)": "簡體中文）",
+  "Chinese (Traditional)": "中國傳統的）"
+}

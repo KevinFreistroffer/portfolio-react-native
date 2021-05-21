@@ -1,0 +1,15 @@
+{
+  "name": "portfolioRN",
+  "displayName": "Portfolio RN",
+  "expo": {
+    "name": "portfolioRN",
+    "slug": "expo-template-bare",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "requireFullScreen": true
+    }
+  }
+}

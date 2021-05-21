@@ -1,0 +1,1 @@
+export const DEFAULT_SPACING: number = 24;
