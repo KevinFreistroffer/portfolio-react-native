@@ -26,19 +26,19 @@
 //   // for all options read: https://www.i18next.com/overview/configuration-options
 //   .init({
 //     backend: {
-//       loadPath: './locales/{{lng}}/translation.json'
+//       loadPath: '/locales/{{lng}}/translation.json'
 //     },
 //     //load: "currentOnly",
-//     //allbackLng: 'en',
-//     //preload: ['en'],
-//     supportedLngs: ['en-US', 'de', 'es', 'fr', 'zh', 'zh_CN', 'zh_TW'],
+//     fallbackLng: 'en_US',
+//     preload: ['en_US'],
+//     supportedLngs: ['en_US', 'de', 'es', 'fr', 'zh', 'zh_CN', 'zh_TW'],
 //     debug: true,
 //     // detection: {
 //     //   order: ['localStorage', 'cookie'],
 //     //   lookupCookie: 'LANG_CODE',
 //     //   lookupLocalStorage: 'LANG_CODE',
 //     //   lowerCaseLng: true,
-//     //   whitelist: ['en', 'de', 'es', 'fr', 'zh_CN', 'zh_TW'],
+//     //   whitelist: ['en-US', 'de', 'es', 'fr', 'zh_CN', 'zh_TW'],
 //     //   //caches: [ 'localStorage', 'cookie'],  
 //     //   // optional set cookie options, reference:[MDN Set-Cookie docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie)
 //     //   //cookieOptions: { path: '/', sameSite: 'strict' }

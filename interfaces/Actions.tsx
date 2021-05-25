@@ -10,7 +10,5 @@ export type LoadingAction = {
 
 export type LocaleAction = {
   type: string;
-  payload: {
-    locale: string
-  };
+  payload: string;
 };

@@ -1,0 +1,108 @@
+{
+  "About me": "Sur moi",
+  "Skills": "Compétences",
+  "Work history": "Antécédents de travail",
+  "Contractor": "Prestataire",
+  "Client": "Client",
+  "Location": "Emplacement",
+  "Employment period": "Période d'emploi",
+  "Position": "Positionner",
+  "Summary": "Résumé",
+  "welcome": "Bienvenu",
+  "Create an Account": "Créer un compte",
+  "Create Account": "Créer un compte",
+  "Log in": "Connexion",
+  "Forgot password": "Mot de passe oublié",
+  "Front End Developer": "Développeur frontal",
+  "Angular & Angular-Dart Developer": "Développeur Angular & Angular-Dart",
+  "Angular Engineer": "Ingénieur angulaire",
+  "Visit website": "Visitez le site Web",
+  "Technologies": "Les technologies",
+  "About": "À propos",
+  "Screenshots": "Captures d'écran",
+  "Select language": "Choisir la langue",
+  "about_me_text": "Bonjour, je m'appelle Kevin Freistroffer. J'ai 36 ans et je développe depuis plus de 10 ans. Je me spécialise en HTML5, CSS3, JavaScript avec React et Angular en front-end, NodeJS et MongoDB côté serveur, Dart et développement mobile avec Flutter. J'aime, je préfère et j'ai besoin de travailler avec une équipe d'autres développeurs pour progresser et j'ai hâte de rejoindre une équipe, dans une méthodologie Agile, en utilisant des outils tels que Jira, pour développer des histoires et des fonctionnalités, et pour corriger les bugs, tout en apprenant des technologies, des stratégies, des processus de réflexion à développer et à intégrer dans mes routines quotidiennes, à être piloté par l'équipe et à diriger en cas de besoin",
+  "work_history": {
+    "summary": {
+      "thermofisher": {
+        "1": "Développeur front-end chargé de convertir les pages angulaires en React compte tenu des conceptions et de l'UX",
+        "2": "Méthodologie Scrum comprenant la planification de sprint, le nettoyage du backlog et les réunions rétrospectives de fin de sprint",
+        "3": "Réunions debout quotidiennes dirigées par un scrum master, un product owner, un chef d'équipe, avec d'autres développeurs front-end, des développeurs backend et d'autres membres de l'équipe au sein de l'entreprise",
+        "4": "Fin des démos de sprint aux membres de l'équipe de l'entreprise",
+        "5": "Partie intégrante du cycle de vie du développement et des versions, y compris l'estimation des exigences, la mise en œuvre des exigences, le déploiement vers le contrôle qualité et la vérification du code que nous avons poussé vers le contrôle qualité et la production après une version",
+        "6": "Processus de développement solide axé sur l'équipe, y compris la révision du code, le chat, les appels téléphoniques et vidéo, des réunions après les heures pour discuter des exigences actuelles et futures, et une collaboration après les heures pour corriger les bogues suite à une publication",
+        "7": "Technologies comprenant: Jira, Confluence, Abstract, HTML5, CSS & SCSS, JavaScript avec React, styled-components, NodeJS, outils de développement dont Jenkins et GitHub",
+        "8": "Exigences développées et mises en production sur thermofisher.com"
+      },
+      "accenture_google": {
+        "1": "Convertissez une application Angular TypeScript existante en Angular-Dart, avec un backend SAP via un serveur Python",
+        "2": "Communiquer et coopérer avec le responsable de la technologie et le gestionnaire pour effectuer des tâches hebdomadaires, y compris des réunions en personne et des réunions vidéo",
+        "3": "Apprenez de nouvelles technologies, notamment les technologies internes et les procédures de développement internes de Dart, Angular-Dart et Googles",
+        "4": "Développez dans un bâtiment Google et à distance"
+      },
+      "apple": {
+        "1": "Développer une interface utilisateur basée sur une conception et les exigences spécifiées avec Angular 6, à l'aide de TypeScript et de composants de matériau angulaires",
+        "2": "Connectez le front-end à un serveur backend en fonction des détails du contrat d'API et restituer les données sur l'interface utilisateur",
+        "3": "Utilisez des outils pour développer, y compris Angular-CLI, le radar d'Apple",
+        "4": "Communiquez avec les membres de l'équipe, y compris les responsables, les chefs d'équipe, les développeurs mobiles iOS et Android, les développeurs backend, l'assurance qualité et la gestion sur une base quotidienne et hebdomadaire en personne et par chat et vidéo avec Slack et WebEx",
+        "5": "Développer dans un bureau Apple"
+      }
+    }
+  },
+  "page_title": {
+    "Home": "Domicile",
+    "Portfolio": "Portefeuille",
+    "Contact me": "Contactez moi",
+    "Register": "S'inscrire",
+    "Sign In": "S'identifier"
+  },
+  "page_content": {
+    "home": {
+      "p1": "C'était une éraflure qu'il remarqua à peine. Bien sûr, il y avait un peu de sang, mais c'était mineur par rapport à la plupart des autres coupures et ecchymoses qu'il avait contractées au cours de ses aventures. Il n'y avait aucun moyen qu'il puisse savoir que la roche qui a produit la coupure contenait du matériel génétique extraterrestre qui parcourait maintenant sa circulation sanguine. Il se sentait parfaitement normal et continua son aventure sans savoir ce qui allait lui arriver."
+    },
+    "portfolio": {
+      "project1": {
+        "description": "Contributions aux fonctionnalités, tâches et corrections de bogues sur 3 pages, y compris la conception réactive de 320 pixels à 1440 pixels à l'aide de CDN CSS personnalisés, de composants réutilisables que nous avons développés et de composants réutilisables existants à partir de référentiels existants.",
+        "technologies": "HTML5, CSS3 et SCSS, JavaScript, Reagieren, gestaltete Komponenten, NodeJS, SCRUM, JIRA",
+        "screenshot1": {
+          "alt": "Historique des commandes - 1440px"
+        },
+        "screenshot2": {
+          "alt": "Détails de la commande - 1440pxx"
+        },
+        "screenshot3": {
+          "alt": "Détails de la commande - 768px"
+        },
+        "screenshot4": {
+          "alt": "Détails de la commande - 576px"
+        },
+        "screenshot5": {
+          "alt": "Détails de la commande - 320px"
+        }
+      },
+      "project2": {
+        "description": "En fonction des coordonnées de la grille, la couleur d'arrière-plan est définie de manière dynamique. Créé en attendant dans un aéroport!",
+        "technologies": "HTML5, CSS3 & SCSS, JavaScript, Reagieren, gestaltete Komponenten, NodeJS, SCRUM, JIRA",
+        "screenshot1": {
+          "alt": "Couleur d'arrière-plan du dégradé dynamique React"
+        }
+      }
+    },
+    "contact_me": {
+      "Email": "E-mail",
+      "LinkedIn": "LinkedIn"
+    }
+  },
+  "form_placeholders": {
+    "Enter a username": "Entrez un nom d'utilisateur",
+    "email@example.com": "email@example.com",
+    "Enter a password": "Entrer un mot de passe",
+    "Confirm your password": "Confirmer votre mot de passe"
+  },
+  "English": "Anglais",
+  "German": "Allemand",
+  "French": "français",
+  "Spanish": "Espanol",
+  "Chinese (Simplified)": "Chinois simplifié)",
+  "Chinese (Traditional)": "Chinois (Traditionnel)"
+}

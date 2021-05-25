@@ -1187,6 +1187,16 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
+"@expo-google-fonts/dev@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/dev/-/dev-0.1.0.tgz#68fa1756d4596283968d1e6f618ddbd752c17eee"
+  integrity sha512-OiKO8z9rauIlWHGSJgbGyklbRJ07vEqhqM2rdcPy4LO98KEeFcpwV2cSHLrL3VFdWM/tpVQHYKDZVtwg+nDywQ==
+
+"@expo-google-fonts/inter@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/inter/-/inter-0.1.0.tgz#399f068437824fcbf6aa3da5fcf490dba2af85a3"
+  integrity sha512-Y6GCqsUX6JwexQ2wmBkMiJBY6M2GpNQRTczzIGbBGhXWQxqGmP5awRcf0ZJV+OlLeJcKAzas/TW45ZLdpG3yzA==
+
 "@expo/config-plugins@1.0.31", "@expo/config-plugins@^1.0.18":
   version "1.0.31"
   resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-1.0.31.tgz#c6e24cee0892ea2fb4f7633a80ae63cbc8cb80de"
@@ -2122,6 +2132,11 @@
   dependencies:
     "@types/react" "*"
     hoist-non-react-statics "^3.3.0"
+
+"@types/i18n-js@^3.8.1":
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/@types/i18n-js/-/i18n-js-3.8.1.tgz#3e36f79e8f535645ace338e22e724cbee544f3b1"
+  integrity sha512-s6GGXB8CYsFZMqSgussqGwYrrjApoTjXPkp0/9txUzO4CPkr+sJpWw19O4r3NYHy8ul6lKuQbP7C3Qk1JU2Kpw==
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
   version "2.0.3"
@@ -3794,6 +3809,13 @@ expect@^25.5.0:
     jest-message-util "^25.5.0"
     jest-regex-util "^25.2.6"
 
+expo-app-loading@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/expo-app-loading/-/expo-app-loading-1.0.3.tgz#35c2dfd71aacd9f5c53777e3ff2ac07549e766df"
+  integrity sha512-zLheUgBCQoyybJrGxw81MWfxvlnHb7zatjLbmkNosqMwqq3MOPC/P4HwF6qYsrVUFO6PIzb4yq3lFO3RkCCfhw==
+  dependencies:
+    expo-splash-screen "~0.10.2"
+
 expo-application@~3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/expo-application/-/expo-application-3.1.2.tgz#7c93e8108a7f2a0be0afe37151f36c98e0111e7c"
@@ -4532,6 +4554,11 @@ hyphenate-style-name@^1.0.2, hyphenate-style-name@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
   integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
+
+i18n-js@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/i18n-js/-/i18n-js-3.8.0.tgz#b8fd6b12e1d88cb71f9806c29bca7c31c012e504"
+  integrity sha512-hDsGgPuvw/2P+lXSbOafAwspK8Ste8YrwuuUg17W3wEcO1JkQxBlPgsN1t2+852nTnz4YSYTjZc/1nAA2PC/nw==
 
 i18next-browser-languagedetector@^6.1.0:
   version "6.1.1"

@@ -13,7 +13,7 @@ export default function Header (props: IHeaderProps) {
   const navigation = useNavigation<any>();
 
   return (
-    <Appbar.Header style={{ backgroundColor: 'black' }}>
+    <Appbar.Header style={{ backgroundColor: '#333' }}>
       {route.name !== 'Home' && <Appbar.BackAction onPress={() => navigation.dispatch(CommonActions.goBack())} />}
       <Appbar.Content title={props.title}/>
       <Appbar.Action icon="dots-vertical" onPress={() => navigation.toggleDrawer()} />

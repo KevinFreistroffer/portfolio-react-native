@@ -1,4 +1,5 @@
 {
+  "Abc": "Abc",
   "About me": "About me",
   "Skills": "Skills",
   "Work history": "Work history",
@@ -39,7 +40,7 @@
         "2": "Communicate and cooperate with technology lead and manager to complete weekly assignments, including in person meetings and video meetings",
         "3": "Learn new technologies including Dart, Angular-Dart, and Googles internal technologies and internal development procedures",
         "4": "Develop in a Google building and remotely"
-      },
+      },      
       "apple": {
         "1": "Develop an UI based on a design and the requirements specified with Angular 6, using TypeScript and Angular Material Components",
         "2": "Connect the front end to a backend server given the API contract details, and render the data on the UI",
