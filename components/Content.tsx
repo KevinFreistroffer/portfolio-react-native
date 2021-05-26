@@ -1,53 +1,64 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {  Provider, useDispatch, useSelector } from 'react-redux';
-import store from '../store/index';
-import { NavigationContainer } from '@react-navigation/native';
+import { useDispatch, useSelector } from 'react-redux';
 import { View, InteractionManager, DevSettings  } from 'react-native';
 import AppLoading from 'expo-app-loading';
 import {
   useFonts,
   Inter_900Black,
 } from '@expo-google-fonts/inter';
-import { Button, Provider as PaperProvider } from 'react-native-paper';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import { DrawerNavigationHelpers } from '@react-navigation/drawer/lib/typescript/src/types';
 import { Home, Portfolio, ContactMe } from '../pages'; 
-import  Theme from '../Theme';
-import * as Localization from 'expo-localization';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { DefaultRootState } from '../store';
 import { setLocale } from '../store/actions/locale';
+import { Button } from 'react-native-paper';
+import DrawerContent from './DrawerContent';
+import * as Localization from 'expo-localization';
+import { DEFAULT_LOCALE } from '../constants';
+
 const i18n = require('i18n-js'); 
+
+i18n.translations = {
+  'en-US': { ...require('../locales/en-US/translation.json') },
+  'de': { ...require('../locales/de/translation.json') },
+  'fr': { ...require('../locales/fr/translation.json') },
+  'es': { ...require('../locales/es/translation.json') },
+  'zh-CN': { ...require('../locales/zh-CN/translation.json') },
+  'zh-TW': { ...require('../locales/zh-TW/translation.json') }
+};
+i18n.fallbacks = true;
+i18n.defaultLocale = Localization.locale;
+
+export type Props = {
+  navigation: DrawerNavigationHelpers
+}
 
 const Drawer = createDrawerNavigator(); 
 
-export default function Content() {
-  const { locale } = useSelector((store:DefaultRootState) => store);
+export default function Content(props: any) {
+  const { locale: localeState, drawer: drawerState } = useSelector((store:DefaultRootState) => store);
   const dispatch = useDispatch();
 
   React.useEffect(() => {
-    i18n.locale = locale.locale;
-    DevSettings.reload();
-  }, [locale.locale]);
-
-  React.useEffect(() => {
-    InteractionManager.runAfterInteractions(() => {});
-
     try {
       AsyncStorage.getItem('LANG_CODE').then((value) => {
         if (value) {
           dispatch(setLocale(value));
+          i18n.locale = value;
         } 
       });
     } catch (error) {
       console.warn('An error occurred in AsyncStorage.getItem', error);
     }
   }, []);
- 
-  const handleSetLanguage = (language?: string) => {
-    dispatch(setLocale('de'));
-    DevSettings.reload();
-  };
+
+  React.useEffect(() => {
+    if (i18n.locale !== localeState.locale) {
+      i18n.locale = localeState.locale;
+    }
+  }, [localeState.locale]); 
 
   let [fontsLoaded] = useFonts({
     // TODO replace with the actual font
@@ -58,6 +69,7 @@ export default function Content() {
     return <AppLoading />
   }
 
+
   return (
     <View style={{ flex: 1 }}>
       <Drawer.Navigator
@@ -65,6 +77,7 @@ export default function Content() {
         drawerStyle={{
           opacity: 0.95,
         }}
+        drawerContent={(props) => <DrawerContent {...props} />}
         drawerContentOptions={{ activeBackgroundColor: '#eeeeee', activeTintColor: 'red'}}
       >
         <Drawer.Screen 
@@ -89,7 +102,6 @@ export default function Content() {
             headerTitle: 'Kevin Freistroffer'
         }} />
       </Drawer.Navigator> 
-      <Button onPress={handleSetLanguage}>Set language</Button>     
     </View>
   );
 };

@@ -56,7 +56,7 @@ export const Home = (props: Props) => {
       <ScrollView contentContainerStyle={{...styles.scrollView, flexDirection: orientation === PORTRAIT ? 'column' : 'row'}}>
         <View style={styles.cardView}>
           <Card style={{...styles.card, ...styles.aboutMeCard}}>
-            <Card.Title title={t('About me', 'About me')} /> 
+            <Card.Title title={t('About me', 'About mefdsafdsafsadf')} /> 
             <Card.Content style={{...styles.cardContent, flexDirection: orientation === PORTRAIT ? 'column' : 'row', justifyContent: 'center', alignItems: 'center'}}>
               <Image style={{...styles.image, marginRight: orientation === PORTRAIT ? 0 : DEFAULT_SPACING }}  source={require("../../imgs/me.jpg")} /> 
               {orientation === PORTRAIT && <Spacer />}

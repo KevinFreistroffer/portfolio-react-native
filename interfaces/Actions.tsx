@@ -12,3 +12,9 @@ export type LocaleAction = {
   type: string;
   payload: string;
 };
+
+
+export type DrawerAction = {
+  type: string;
+  payload: boolean;
+};

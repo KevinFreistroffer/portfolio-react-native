@@ -1,53 +1,41 @@
-// import i18n from 'i18next';
-// import { initReactI18next } from 'react-i18next';
-// import { Localization } from 'expo-localization'
+import { I18nManager } from 'react-native';
+import i18n from 'i18n-js';
+import memoize from 'lodash.memoize';
+import * as Localization from 'expo-localization';
 
-// import Backend from 'i18next-http-backend';
-// //import LanguageDetector from 'i18next-browser-languagedetector';
-// import i18nLanguageDetector from './i18n.languageDetector';
-// import AsyncStorage from '@react-native-async-storage/async-storage';
-// // import { getLangCode } from '../src/utility/getLangCode';
+export const DEFAULT_LANGUAGE = Localization.locale;
 
+export const translationGetters = {
+  // lazy requires (metro bundler does not support symlinks)
+  'en-US': () => require('./locales/en-US/translation.json'),
+  'de': () => require('./locales/de/translation.json'),
+  'fr': () => require('./locales/fr/translation.json'),
+  'es': () => require('./locales/es/translation.json'),
+  'zh-CN': () => require('./locales/zh-CN/translation.json'),
+  'zh-TW': () => require('./locales/zh-TW/translation.json')
+};
 
+export const translate = memoize(
+  (key, config) => i18n.t(key, config),
+  (key, config) => (config ? key + JSON.stringify(config) : key),
+);
 
-// // languageDetector.addDetector(i18nLanguageDetector)
-// // don't want to use this?
-// // have a look at the Quick start guide 
-// // for passing in lng and translations on init
+export const t = translate;
 
-// i18n
-//   .use(Backend)
-//   // detect user language
-//   // learn more: https://github.com/i18next/i18next-browser-languageDetector
-//   .use(i18nLanguageDetector)
-//   // pass the i18n instance to react-i18next.
-//   .use(initReactI18next)
-//   // init i18next
-//   // for all options read: https://www.i18next.com/overview/configuration-options
-//   .init({
-//     backend: {
-//       loadPath: '/locales/{{lng}}/translation.json'
-//     },
-//     //load: "currentOnly",
-//     fallbackLng: 'en_US',
-//     preload: ['en_US'],
-//     supportedLngs: ['en_US', 'de', 'es', 'fr', 'zh', 'zh_CN', 'zh_TW'],
-//     debug: true,
-//     // detection: {
-//     //   order: ['localStorage', 'cookie'],
-//     //   lookupCookie: 'LANG_CODE',
-//     //   lookupLocalStorage: 'LANG_CODE',
-//     //   lowerCaseLng: true,
-//     //   whitelist: ['en-US', 'de', 'es', 'fr', 'zh_CN', 'zh_TW'],
-//     //   //caches: [ 'localStorage', 'cookie'],  
-//     //   // optional set cookie options, reference:[MDN Set-Cookie docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie)
-//     //   //cookieOptions: { path: '/', sameSite: 'strict' }
-//     // },
-//     react: {
-//       //wait: true,
-//       useSuspense: true
-//     }
-//   });
+export const setI18nConfig = (codeLang = null) => {
+  // fallback if no available language fits
+  const fallback = { languageTag: DEFAULT_LANGUAGE, isRTL: false };
+  const lang = codeLang ? { languageTag: codeLang, isRTL: false } : null;
 
+  const { languageTag, isRTL } = lang ? lang : fallback;
 
-// export default i18n;
+  // clear translation cache
+  translate.cache.clear();
+  // update layout direction
+  I18nManager.forceRTL(isRTL);
+  // set i18n-js config
+  i18n.translations = { [languageTag]: translationGetters[languageTag]() };
+  i18n.locale = languageTag;
+
+  return languageTag;
+};
